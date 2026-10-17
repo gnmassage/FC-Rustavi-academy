@@ -95,7 +95,7 @@
             </nav>
 
             <div class="hidden sm:flex items-center gap-4">
-                <!-- Language Selector -->
+                <!-- Desktop Language Selector -->
                 <div class="relative inline-block text-left">
                     <select id="langSelect" onchange="changeLanguage(this.value)" class="bg-slate-100 border border-slate-300 text-slate-800 text-xs font-bold rounded-xl px-3 py-2 focus:outline-none focus:border-rustaviRed cursor-pointer">
                         <option value="ka">🇬🇪 KA</option>
@@ -110,13 +110,13 @@
                 </a>
             </div>
 
-            <!-- Mobile Menu Toggle -->
+            <!-- Mobile Menu Toggle & Language Switcher -->
             <div class="flex lg:hidden items-center gap-2">
-                <select id="langSelectMobile" onchange="changeLanguage(this.value)" class="bg-slate-100 border border-slate-300 text-slate-800 text-xs font-bold rounded-lg px-2 py-1.5 focus:outline-none">
-                    <option value="ka">KA</option>
-                    <option value="en">EN</option>
-                    <option value="ru">RU</option>
-                    <option value="es">ES</option>
+                <select id="langSelectMobile" onchange="changeLanguage(this.value)" class="bg-slate-100 border border-slate-300 text-slate-800 text-xs font-bold rounded-lg px-2.5 py-2 focus:outline-none focus:border-rustaviRed cursor-pointer">
+                    <option value="ka">🇬🇪 KA</option>
+                    <option value="en">🇬🇧 EN</option>
+                    <option value="ru">🇷🇺 RU</option>
+                    <option value="es">🇪🇸 ES</option>
                 </select>
                 <button id="menu-btn" class="text-2xl text-slate-800 focus:outline-none p-2">
                     <i class="fa-solid fa-bars"></i>
@@ -244,13 +244,6 @@
                         <li class="flex items-start gap-3">
                             <i class="fa-solid fa-xmark text-red-500 mt-1 text-base"></i>
                             <div>
-                                <strong data-i18n="localFeature3Title" class="text-slate-800">უბრალოდ „ბურთის გაგორება“:</strong>
-                                <span data-i18n="localFeature3Desc">ვარჯიშები სისტემური გეგმისა და დისციპლინური სტანდარტის გარეშე.</span>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-xmark text-red-500 mt-1 text-base"></i>
-                            <div>
                                 <strong data-i18n="localFeature4Title" class="text-slate-800">პერსპექტივის გარეშე:</strong>
                                 <span data-i18n="localFeature4Desc">არ არსებობს შემდეგ საფეხურზე ან ოფიციალურ ჩემპიონატში გადასვლის შანსი.</span>
                             </div>
@@ -283,13 +276,6 @@
                             <div>
                                 <strong data-i18n="academyFeature2Title" class="text-slate-900">UEFA-ს ლიცენზია:</strong>
                                 <span data-i18n="academyFeature2Desc">საერთაშორისო სერტიფიკატის მქონე პროფესიონალი მწვრთნელები.</span>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-check text-green-600 mt-1 text-base font-black"></i>
-                            <div>
-                                <strong data-i18n="academyFeature3Title" class="text-slate-900">ევროპული მეთოდოლოგია:</strong>
-                                <span data-i18n="academyFeature3Desc">სისტემური განვითარება, დისციპლინა, ტაქტიკური აზროვნება და გუნდურობა.</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
@@ -460,7 +446,7 @@
         </div>
     </section>
 
-    <!-- Match Center (Calendar, Standings & Stats) -->
+    <!-- 🌟 MATCH CENTER (Fully Localized Match Calendar) 🌟 -->
     <section id="match-center" class="py-20 bg-slate-100 border-y border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
@@ -479,33 +465,35 @@
 
             <!-- Tab Content 1: Matches -->
             <div id="tab-matches" class="space-y-4">
+                <!-- Match Card 1 -->
                 <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
                     <div class="flex items-center gap-3">
-                        <span class="bg-red-100 text-rustaviRed font-bold text-xs px-3 py-1 rounded-full">U-14 ჩემპიონატი</span>
-                        <span class="text-slate-500 text-xs"><i class="fa-regular fa-calendar mr-1"></i> 24 ოქტომბერი, 2026 | 16:00</span>
+                        <span class="bg-red-100 text-rustaviRed font-bold text-xs px-3 py-1 rounded-full" data-i18n="match1Tournament">U-14 ჩემპიონატი</span>
+                        <span class="text-slate-500 text-xs"><i class="fa-regular fa-calendar mr-1"></i> <span data-i18n="match1Date">24 ოქტომბერი, 2026 | 16:00</span></span>
                     </div>
                     <div class="flex items-center gap-6 font-bold text-base sm:text-lg">
-                        <span class="text-slate-900 flex items-center gap-2">სფკ რუსთავი <span class="text-xs bg-rustaviRed text-white px-1.5 py-0.5 rounded">H</span></span>
+                        <span class="text-slate-900 flex items-center gap-2"><span data-i18n="teamRustavi">სფკ რუსთავი</span> <span class="text-xs bg-rustaviRed text-white px-1.5 py-0.5 rounded">H</span></span>
                         <span class="text-rustaviRed font-black text-sm px-3 py-1 bg-red-50 rounded-lg">VS</span>
-                        <span class="text-slate-900 flex items-center gap-2"><span class="text-xs bg-slate-200 text-slate-700 px-1.5 py-0.5 rounded">A</span> დინამო თბილისი</span>
+                        <span class="text-slate-900 flex items-center gap-2"><span class="text-xs bg-slate-200 text-slate-700 px-1.5 py-0.5 rounded">A</span> <span data-i18n="teamDinamo">დინამო თბილისი</span></span>
                     </div>
                     <span class="text-xs text-slate-600 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
-                        <i class="fa-solid fa-location-dot text-rustaviRed mr-1"></i> რუსთავის ცენტრალური სტადიონი
+                        <i class="fa-solid fa-location-dot text-rustaviRed mr-1"></i> <span data-i18n="stadiumRustavi">რუსთავის ცენტრალური სტადიონი</span>
                     </span>
                 </div>
 
+                <!-- Match Card 2 -->
                 <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
                     <div class="flex items-center gap-3">
-                        <span class="bg-amber-100 text-amber-800 font-bold text-xs px-3 py-1 rounded-full">U-12 ლიგა</span>
-                        <span class="text-slate-500 text-xs"><i class="fa-regular fa-calendar mr-1"></i> 28 ოქტომბერი, 2026 | 14:00</span>
+                        <span class="bg-amber-100 text-amber-800 font-bold text-xs px-3 py-1 rounded-full" data-i18n="match2Tournament">U-12 ლიგა</span>
+                        <span class="text-slate-500 text-xs"><i class="fa-regular fa-calendar mr-1"></i> <span data-i18n="match2Date">28 ოქტომბერი, 2026 | 14:00</span></span>
                     </div>
                     <div class="flex items-center gap-6 font-bold text-base sm:text-lg">
-                        <span class="text-slate-900 flex items-center gap-2">საბურთალო <span class="text-xs bg-slate-200 text-slate-700 px-1.5 py-0.5 rounded">H</span></span>
+                        <span class="text-slate-900 flex items-center gap-2"><span data-i18n="teamSaburtalo">საბურთალო</span> <span class="text-xs bg-slate-200 text-slate-700 px-1.5 py-0.5 rounded">H</span></span>
                         <span class="text-rustaviRed font-black text-sm px-3 py-1 bg-red-50 rounded-lg">VS</span>
-                        <span class="text-slate-900 flex items-center gap-2"><span class="text-xs bg-rustaviRed text-white px-1.5 py-0.5 rounded">A</span> სფკ რუსთავი</span>
+                        <span class="text-slate-900 flex items-center gap-2"><span class="text-xs bg-rustaviRed text-white px-1.5 py-0.5 rounded">A</span> <span data-i18n="teamRustavi">სფკ რუსთავი</span></span>
                     </div>
                     <span class="text-xs text-slate-600 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
-                        <i class="fa-solid fa-location-dot text-rustaviRed mr-1"></i> თბილისი, ბენდელას სტადიონი
+                        <i class="fa-solid fa-location-dot text-rustaviRed mr-1"></i> <span data-i18n="stadiumBendela">თბილისი, ბენდელას სტადიონი</span>
                     </span>
                 </div>
             </div>
@@ -516,20 +504,20 @@
                     <thead class="bg-slate-100 text-xs font-bold uppercase text-slate-600">
                         <tr>
                             <th class="p-4">#</th>
-                            <th class="p-4">გუნდი (U-14)</th>
-                            <th class="p-4 text-center">თ</th>
-                            <th class="p-4 text-center">მ</th>
-                            <th class="p-4 text-center">ფ</th>
-                            <th class="p-4 text-center">წ</th>
-                            <th class="p-4 text-center">გზ</th>
-                            <th class="p-4 text-center font-bold text-slate-900">ქ</th>
+                            <th class="p-4" data-i18n="tableHeaderTeam">გუნდი (U-14)</th>
+                            <th class="p-4 text-center" data-i18n="tableHeaderP">თ</th>
+                            <th class="p-4 text-center" data-i18n="tableHeaderW">მ</th>
+                            <th class="p-4 text-center" data-i18n="tableHeaderD">ფ</th>
+                            <th class="p-4 text-center" data-i18n="tableHeaderL">წ</th>
+                            <th class="p-4 text-center" data-i18n="tableHeaderGoals">გზ</th>
+                            <th class="p-4 text-center font-bold text-slate-900" data-i18n="tableHeaderPts">ქ</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-200">
                         <tr class="bg-red-50/80 font-bold text-slate-900">
                             <td class="p-4 text-rustaviRed font-black">1</td>
                             <td class="p-4 flex items-center gap-2">
-                                <span class="w-2.5 h-2.5 rounded-full bg-rustaviRed"></span> სფკ რუსთავი
+                                <span class="w-2.5 h-2.5 rounded-full bg-rustaviRed"></span> <span data-i18n="teamRustavi">სფკ რუსთავი</span>
                             </td>
                             <td class="p-4 text-center">8</td>
                             <td class="p-4 text-center">7</td>
@@ -540,7 +528,7 @@
                         </tr>
                         <tr>
                             <td class="p-4">2</td>
-                            <td class="p-4">დინამო თბილისი</td>
+                            <td class="p-4" data-i18n="teamDinamo">დინამო თბილისი</td>
                             <td class="p-4 text-center">8</td>
                             <td class="p-4 text-center">6</td>
                             <td class="p-4 text-center">1</td>
@@ -550,7 +538,7 @@
                         </tr>
                         <tr>
                             <td class="p-4">3</td>
-                            <td class="p-4">იბერია 1999</td>
+                            <td class="p-4" data-i18n="teamIberia">იბერია 1999</td>
                             <td class="p-4 text-center">8</td>
                             <td class="p-4 text-center">5</td>
                             <td class="p-4 text-center">2</td>
@@ -566,35 +554,35 @@
             <div id="tab-stats" class="hidden grid md:grid-cols-2 gap-6">
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
                     <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2">
-                        <i class="fa-solid fa-futbol text-rustaviRed"></i> ბომბარდირები (U-14)
+                        <i class="fa-solid fa-futbol text-rustaviRed"></i> <span data-i18n="statsTopScorers">ბომბარდირები (U-14)</span>
                     </h4>
                     <div class="space-y-3 text-sm">
                         <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
-                            <span class="font-bold text-slate-800">1. ნიკოლოზ კაპანაძე</span>
-                            <span class="text-rustaviRed font-black">12 გოლი</span>
+                            <span class="font-bold text-slate-800" data-i18n="player1">1. ნიკოლოზ კაპანაძე</span>
+                            <span class="text-rustaviRed font-black" data-i18n="player1Goals">12 გოლი</span>
                         </div>
                         <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
-                            <span class="font-bold text-slate-800">2. დავით გიორგაძე</span>
-                            <span class="text-rustaviRed font-black">9 გოლი</span>
+                            <span class="font-bold text-slate-800" data-i18n="player2">2. დავით გიორგაძე</span>
+                            <span class="text-rustaviRed font-black" data-i18n="player2Goals">9 გოლი</span>
                         </div>
                         <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
-                            <span class="font-bold text-slate-800">3. ლუკა მაისურაძე</span>
-                            <span class="text-rustaviRed font-black">7 გოლი</span>
+                            <span class="font-bold text-slate-800" data-i18n="player3">3. ლუკა მაისურაძე</span>
+                            <span class="text-rustaviRed font-black" data-i18n="player3Goals">7 გოლი</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
                     <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2">
-                        <i class="fa-solid fa-hands-holding text-rustaviRed"></i> "მშრალი" მატჩები (მეკარეები)
+                        <i class="fa-solid fa-hands-holding text-rustaviRed"></i> <span data-i18n="statsCleanSheets">"მშრალი" მატჩები (მეკარეები)</span>
                     </h4>
                     <div class="space-y-3 text-sm">
                         <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
-                            <span class="font-bold text-slate-800">1. გიორგი ბერიძე</span>
+                            <span class="font-bold text-slate-800" data-i18n="gk1">1. გიორგი ბერიძე</span>
                             <span class="text-rustaviRed font-black">5 Clean Sheet</span>
                         </div>
                         <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
-                            <span class="font-bold text-slate-800">2. ალექსანდრე ხოშტარია</span>
+                            <span class="font-bold text-slate-800" data-i18n="gk2">2. ალექსანდრე ხოშტარია</span>
                             <span class="text-rustaviRed font-black">3 Clean Sheet</span>
                         </div>
                     </div>
@@ -618,7 +606,7 @@
                 <div>
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="News" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-rustaviRed text-[11px] font-bold px-3 py-1 rounded-full shadow">18 ოქტ, 2026</span>
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-rustaviRed text-[11px] font-bold px-3 py-1 rounded-full shadow" data-i18n="news1Date">18 ოქტ, 2026</span>
                     </div>
                     <div class="p-6">
                         <h3 class="font-extrabold text-lg text-slate-900 group-hover:text-rustaviRed transition leading-snug" data-i18n="news1Title">
@@ -641,7 +629,7 @@
                 <div>
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=600&q=80" alt="News" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-rustaviRed text-[11px] font-bold px-3 py-1 rounded-full shadow">12 ოქტ, 2026</span>
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-rustaviRed text-[11px] font-bold px-3 py-1 rounded-full shadow" data-i18n="news2Date">12 ოქტ, 2026</span>
                     </div>
                     <div class="p-6">
                         <h3 class="font-extrabold text-lg text-slate-900 group-hover:text-rustaviRed transition leading-snug" data-i18n="news2Title">
@@ -664,7 +652,7 @@
                 <div>
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="News" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-rustaviRed text-[11px] font-bold px-3 py-1 rounded-full shadow">05 ოქტ, 2026</span>
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-rustaviRed text-[11px] font-bold px-3 py-1 rounded-full shadow" data-i18n="news3Date">05 ოქტ, 2026</span>
                     </div>
                     <div class="p-6">
                         <h3 class="font-extrabold text-lg text-slate-900 group-hover:text-rustaviRed transition leading-snug" data-i18n="news3Title">
@@ -684,7 +672,7 @@
         </div>
     </section>
 
-    <!-- 🌟 UPDATED FAQ SECTION (Accordion Style) 🌟 -->
+    <!-- FAQ SECTION (Accordion Style) -->
     <section id="faq" class="py-20 bg-slate-100 border-t border-slate-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -877,8 +865,6 @@
                 localFeature1Desc: "პატარა, ხშირად გაუმართავი ან არასტანდარტული უბნის მოედანი.",
                 localFeature2Title: "მოყვარული მწვრთნელები:",
                 localFeature2Desc: "ხშირად ულიცენზიო კადრები, ბავშვთა ფეხბურთის სპეციალური განათლების გარეშე.",
-                localFeature3Title: "უბრალოდ „ბურთის გაგორება“:",
-                localFeature3Desc: "ვარჯიშები სისტემური გეგმისა და დისციპლინური სტანდარტის გარეშე.",
                 localFeature4Title: "პერსპექტივის გარეშე:",
                 localFeature4Desc: "არ არსებობს შემდეგ საფეხურზე ან ოფიციალურ ჩემპიონატში გადასვლის შანსი.",
                 cardAcademyHeader: "პროფესიონალური არჩევანი",
@@ -887,8 +873,6 @@
                 academyFeature1Desc: "სტანდარტული ბუნებრივი და ხელოვნურსაფარიანი მოედნები რუსთავში.",
                 academyFeature2Title: "UEFA-ს ლიცენზია:",
                 academyFeature2Desc: "საერთაშორისო სერტიფიკატის მქონე პროფესიონალი მწვრთნელები.",
-                academyFeature3Title: "ევროპული მეთოდოლოგია:",
-                academyFeature3Desc: "სისტემური განვითარება, დისციპლინა, ტაქტიკური აზროვნება და გუნდურობა.",
                 academyFeature4Title: "რეალური ტრამპლინი:",
                 academyFeature4Desc: "მონაწილეობა ეროვნულ ჩემპიონატში და შანსი სფკ რუსთავის პირველ გუნდში მოხვედრის.",
                 cardAcademyFooter: "მომავალი ჩემპიონები იზრდებიან აქ!",
@@ -918,12 +902,42 @@
                 matchesTab: "მომავალი თამაშები",
                 tableTab: "სატურნირო ცხრილი",
                 statsTab: "ბომბარდირები",
+                match1Tournament: "U-14 ჩემპიონატი",
+                match1Date: "24 ოქტომბერი, 2026 | 16:00",
+                match2Tournament: "U-12 ლიგა",
+                match2Date: "28 ოქტომბერი, 2026 | 14:00",
+                teamRustavi: "სფკ რუსთავი",
+                teamDinamo: "დინამო თბილისი",
+                teamSaburtalo: "საბურთალო",
+                teamIberia: "იბერია 1999",
+                stadiumRustavi: "რუსთავის ცენტრალური სტადიონი",
+                stadiumBendela: "თბილისი, ბენდელას სტადიონი",
+                tableHeaderTeam: "გუნდი (U-14)",
+                tableHeaderP: "თ",
+                tableHeaderW: "მ",
+                tableHeaderD: "ფ",
+                tableHeaderL: "წ",
+                tableHeaderGoals: "გზ",
+                tableHeaderPts: "ქ",
+                statsTopScorers: "ბომბარდირები (U-14)",
+                statsCleanSheets: "\"მშრალი\" მატჩები (მეკარეები)",
+                player1: "1. ნიკოლოზ კაპანაძე",
+                player1Goals: "12 გოლი",
+                player2: "2. დავით გიორგაძე",
+                player2Goals: "9 გოლი",
+                player3: "3. ლუკა მაისურაძე",
+                player3Goals: "7 გოლი",
+                gk1: "1. გიორგი ბერიძე",
+                gk2: "2. ალექსანდრე ხოშტარია",
                 newsSubtitle: "სიახლეები",
                 newsTitle: "აკადემიის ცხოვრება",
+                news1Date: "18 ოქტ, 2026",
                 news1Title: "სფკ რუსთავის აკადემიის ახალი სეზონი ოფიციალურად გაიხსნა!",
                 news1Desc: "2026 წლის შემოდგომის სეზონი რეკორდული რაოდენობის ახალი მოსწავლით დაიწყო. განახლდა ინფრასტრუქტურა და სავარჯიშო ინვენტარი.",
+                news2Date: "12 ოქტ, 2026",
                 news2Title: "U-14 გუნდმა საერთაშორისო ტურნირზე II ადგილი დაიკავა",
                 news2Desc: "ჩვენმა ახალგაზრდა ფეხბურთელებმა ბათუმში გამართულ ტურნირზე ღირსეული თამაში აჩვენეს და ვერცხლის მედლები მოიპოვეს.",
+                news3Date: "05 ოქტ, 2026",
                 news3Title: "მასტერკლასი UEFA-ს ინსტრუქტორისგან",
                 news3Desc: "აკადემიის მწვრთნელებისთვის ჩატარდა სპეციალური სემინარი თანამედროვე საფეხბურთო მეთოდოლოგიის შესახებ.",
                 readMore: "სრულად წაკითხვა",
@@ -990,8 +1004,6 @@
                 localFeature1Desc: "Small, non-standard or damaged neighborhood field.",
                 localFeature2Title: "Amateur Coaches:",
                 localFeature2Desc: "Often unlicensed staff without specialized youth football education.",
-                localFeature3Title: "Just Kicking the Ball:",
-                localFeature3Desc: "Sessions without systematic planning or discipline standards.",
                 localFeature4Title: "No Real Progression:",
                 localFeature4Desc: "No opportunity to transition to official leagues or pro levels.",
                 cardAcademyHeader: "Professional Choice",
@@ -1000,8 +1012,6 @@
                 academyFeature1Desc: "Full-size natural and artificial pitches in Rustavi.",
                 academyFeature2Title: "UEFA License:",
                 academyFeature2Desc: "Certified professional coaches with international degrees.",
-                academyFeature3Title: "European Methodology:",
-                academyFeature3Desc: "Systematic growth, discipline, tactical thinking & teamwork.",
                 academyFeature4Title: "Real Trampoline:",
                 academyFeature4Desc: "Championship participation & chance to join FC Rustavi first team.",
                 cardAcademyFooter: "Future Champions Grow Here!",
@@ -1031,12 +1041,42 @@
                 matchesTab: "Upcoming Matches",
                 tableTab: "League Standings",
                 statsTab: "Top Scorers",
+                match1Tournament: "U-14 Championship",
+                match1Date: "October 24, 2026 | 16:00",
+                match2Tournament: "U-12 League",
+                match2Date: "October 28, 2026 | 14:00",
+                teamRustavi: "FC Rustavi",
+                teamDinamo: "Dinamo Tbilisi",
+                teamSaburtalo: "Saburtalo",
+                teamIberia: "Iberia 1999",
+                stadiumRustavi: "Rustavi Central Stadium",
+                stadiumBendela: "Tbilisi, Bendela Stadium",
+                tableHeaderTeam: "Team (U-14)",
+                tableHeaderP: "P",
+                tableHeaderW: "W",
+                tableHeaderD: "D",
+                tableHeaderL: "L",
+                tableHeaderGoals: "GD",
+                tableHeaderPts: "Pts",
+                statsTopScorers: "Top Scorers (U-14)",
+                statsCleanSheets: "Clean Sheets (Goalkeepers)",
+                player1: "1. Nikoloz Kapanadze",
+                player1Goals: "12 Goals",
+                player2: "2. Davit Giorgadze",
+                player2Goals: "9 Goals",
+                player3: "3. Luka Maisuradze",
+                player3Goals: "7 Goals",
+                gk1: "1. Giorgi Beridze",
+                gk2: "2. Aleksandre Khoshtaria",
                 newsSubtitle: "News",
                 newsTitle: "Academy Life",
+                news1Date: "Oct 18, 2026",
                 news1Title: "FC Rustavi Academy New Season Officially Opened!",
                 news1Desc: "The Autumn 2026 season started with a record number of new students. Infrastructure and equipment have been updated.",
+                news2Date: "Oct 12, 2026",
                 news2Title: "U-14 Team Won II Place in International Tournament",
                 news2Desc: "Our young football players showed a worthy game and won silver medals at the tournament held in Batumi.",
+                news3Date: "Oct 05, 2026",
                 news3Title: "Masterclass from UEFA Instructor",
                 news3Desc: "A special seminar on modern football methodology was held for the academy coaches.",
                 readMore: "Read Full News",
@@ -1103,8 +1143,6 @@
                 localFeature1Desc: "Маленькое, нестандартное или поврежденное дворовое поле.",
                 localFeature2Title: "Тренеры-любители:",
                 localFeature2Desc: "Часто специалисты без лицензии и опыта детской работы.",
-                localFeature3Title: "Просто «пинание мяча»:",
-                localFeature3Desc: "Занятия без системной программы и дисциплинарного стандарта.",
                 localFeature4Title: "Без перспективы:",
                 localFeature4Desc: "Нет возможности перейти на следующий уровень или в официальные лиги.",
                 cardAcademyHeader: "Профессиональный выбор",
@@ -1113,8 +1151,6 @@
                 academyFeature1Desc: "Полноразмерные натуральные и искусственные поля в Рустави.",
                 academyFeature2Title: "Лицензия UEFA:",
                 academyFeature2Desc: "Сертифицированные тренеры с международными дипломами.",
-                academyFeature3Title: "Европейская методика:",
-                academyFeature3Desc: "Системное развитие, дисциплина, тактика и командная игра.",
                 academyFeature4Title: "Реальный трамплин:",
                 academyFeature4Desc: "Участие в чемпионате и шанс попасть в первую команду ФК Рустави.",
                 cardAcademyFooter: "Будущие чемпионы растут здесь!",
@@ -1144,12 +1180,42 @@
                 matchesTab: "Матчи",
                 tableTab: "Таблица",
                 statsTab: "Бомбардиры",
+                match1Tournament: "Чемпионат U-14",
+                match1Date: "24 Октября, 2026 | 16:00",
+                match2Tournament: "Лига U-12",
+                match2Date: "28 Октября, 2026 | 14:00",
+                teamRustavi: "ФК Рустави",
+                teamDinamo: "Динамо Тбилиси",
+                teamSaburtalo: "Сабуртало",
+                teamIberia: "Иберия 1999",
+                stadiumRustavi: "Центральный стадион Рустави",
+                stadiumBendela: "Тбилиси, стадион Бендела",
+                tableHeaderTeam: "Команда (U-14)",
+                tableHeaderP: "И",
+                tableHeaderW: "В",
+                tableHeaderD: "Н",
+                tableHeaderL: "П",
+                tableHeaderGoals: "М",
+                tableHeaderPts: "О",
+                statsTopScorers: "Бомбардиры (U-14)",
+                statsCleanSheets: "Сухие матчи (Вратари)",
+                player1: "1. Николоз Капанадзе",
+                player1Goals: "12 Голов",
+                player2: "2. Давид Гиоргадзе",
+                player2Goals: "9 Голов",
+                player3: "3. Лука Майсурадзе",
+                player3Goals: "7 Голов",
+                gk1: "1. Георгий Беридзе",
+                gk2: "2. Александр Хоштария",
                 newsSubtitle: "Новости",
                 newsTitle: "Жизнь Академии",
+                news1Date: "18 Окт, 2026",
                 news1Title: "Новый сезон Академии ФК Рустави официально открыт!",
                 news1Desc: "Осенний сезон 2026 года стартовал с рекордного количества новых воспитанников. Были обновлены инфраструктура и инвентарь.",
+                news2Date: "12 Окт, 2026",
                 news2Title: "Команда U-14 заняла II место на международном турнире",
                 news2Desc: "Наши молодые футболисты показали достойную игру и завоевали серебряные медали на турнире в Батуми.",
+                news3Date: "05 Окт, 2026",
                 news3Title: "Мастер-класс от инструктора UEFA",
                 news3Desc: "Для тренеров академии был проведен специальный семинар по современной футбольной методологии.",
                 readMore: "Подробнее",
@@ -1216,8 +1282,6 @@
                 localFeature1Desc: "Campo de barrio pequeño, no estándar o dañado.",
                 localFeature2Title: "Entrenadores Amateur:",
                 localFeature2Desc: "Personal a menudo sin licencia ni educación especializada.",
-                localFeature3Title: "Solo patear el balón:",
-                localFeature3Desc: "Sesiones sin planificación ni disciplina estándar.",
                 localFeature4Title: "Sin Proyección Real:",
                 localFeature4Desc: "Sin oportunidad de pasar a ligas oficiales o nivel profesional.",
                 cardAcademyHeader: "Elección Profesional",
@@ -1226,8 +1290,6 @@
                 academyFeature1Desc: "Campos naturales y artificiales reglamentarios en Rustavi.",
                 academyFeature2Title: "Licencia UEFA:",
                 academyFeature2Desc: "Entrenadores profesionales certificados internacionalmente.",
-                academyFeature3Title: "Metodología Europea:",
-                academyFeature3Desc: "Desarrollo sistemático, disciplina y pensamiento táctico.",
                 academyFeature4Title: "Trampolín Real:",
                 academyFeature4Desc: "Participación en torneos y posibilidad de llegar al primer equipo.",
                 cardAcademyFooter: "¡Los futuros campeones crecen aquí!",
@@ -1257,12 +1319,42 @@
                 matchesTab: "Partidos",
                 tableTab: "Clasificación",
                 statsTab: "Goleadores",
+                match1Tournament: "Campeonato U-14",
+                match1Date: "24 de Octubre, 2026 | 16:00",
+                match2Tournament: "Liga U-12",
+                match2Date: "28 de Octubre, 2026 | 14:00",
+                teamRustavi: "FC Rustavi",
+                teamDinamo: "Dinamo Tbilisi",
+                teamSaburtalo: "Saburtalo",
+                teamIberia: "Iberia 1999",
+                stadiumRustavi: "Estadio Central de Rustavi",
+                stadiumBendela: "Tbilisi, Estadio Bendela",
+                tableHeaderTeam: "Equipo (U-14)",
+                tableHeaderP: "PJ",
+                tableHeaderW: "PG",
+                tableHeaderD: "PE",
+                tableHeaderL: "PP",
+                tableHeaderGoals: "GF",
+                tableHeaderPts: "Pts",
+                statsTopScorers: "Goleadores (U-14)",
+                statsCleanSheets: "Porterías a Cero (Porteros)",
+                player1: "1. Nikoloz Kapanadze",
+                player1Goals: "12 Goles",
+                player2: "2. Davit Giorgadze",
+                player2Goals: "9 Goles",
+                player3: "3. Luka Maisuradze",
+                player3Goals: "7 Goles",
+                gk1: "1. Giorgi Beridze",
+                gk2: "2. Aleksandre Khoshtaria",
                 newsSubtitle: "Noticias",
                 newsTitle: "Vida en la Academia",
+                news1Date: "18 Oct, 2026",
                 news1Title: "¡Inauguración oficial de la nueva temporada de la Academia del FC Rustavi!",
                 news1Desc: "La temporada de otoño de 2026 comenzó con un número récord de nuevos alumnos. Se ha renovado la infraestructura y el material.",
+                news2Date: "12 Oct, 2026",
                 news2Title: "El equipo U-14 obtuvo el II puesto en el torneo internacional",
                 news2Desc: "Nuestros jóvenes futbolistas demostraron un gran juego y ganaron las medallas de plata en el torneo celebrado en Batumi.",
+                news3Date: "05 Oct, 2026",
                 news3Title: "Clase magistral de un instructor de la UEFA",
                 news3Desc: "Se celebró un seminario especial sobre la metodología del fútbol moderno para los entrenadores de la academia.",
                 readMore: "Leer más",
@@ -1299,13 +1391,16 @@
             if (!translations[lang]) return;
             localStorage.setItem('rustavi_lang', lang);
 
-            document.getElementById('langSelect').value = lang;
-            const mobileSelect = document.getElementById('langSelectMobile');
-            if(mobileSelect) mobileSelect.value = lang;
+            // Sync both desktop and mobile dropdowns
+            const langSelect = document.getElementById('langSelect');
+            if (langSelect) langSelect.value = lang;
+
+            const langSelectMobile = document.getElementById('langSelectMobile');
+            if (langSelectMobile) langSelectMobile.value = lang;
 
             document.querySelectorAll('[data-i18n]').forEach(element => {
                 const key = element.getAttribute('data-i18n');
-                if (translations[lang][key]) {
+                if (translations[lang] && translations[lang][key]) {
                     element.textContent = translations[lang][key];
                 }
             });
@@ -1354,19 +1449,23 @@
 
             setTimeout(() => {
                 const introScreen = document.getElementById('intro-screen');
-                introScreen.classList.add('opacity-0');
-                setTimeout(() => {
-                    introScreen.style.display = 'none';
-                }, 700);
+                if (introScreen) {
+                    introScreen.classList.add('opacity-0');
+                    setTimeout(() => {
+                        introScreen.style.display = 'none';
+                    }, 700);
+                }
             }, 2000);
         });
 
         // Mobile menu toggle
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
 
         function handleRegistration(e) {
             e.preventDefault();
