@@ -85,10 +85,12 @@
             <!-- Desktop Nav -->
             <nav class="hidden lg:flex items-center gap-6 font-bold text-sm text-slate-700">
                 <a href="#about" data-i18n="navAbout" class="hover:text-rustaviRed transition">ჩვენ შესახებ</a>
+                <a href="#why-us" data-i18n="navWhyUs" class="hover:text-rustaviRed transition">რატომ აკადემია?</a>
                 <a href="#coaches" data-i18n="navCoaches" class="hover:text-rustaviRed transition">მწვრთნელები</a>
                 <a href="#teams" data-i18n="navTeams" class="hover:text-rustaviRed transition">გუნდები</a>
                 <a href="#match-center" data-i18n="navMatchCenter" class="hover:text-rustaviRed transition">მატჩ ცენტრი</a>
                 <a href="#news" data-i18n="navNews" class="hover:text-rustaviRed transition">სიახლეები</a>
+                <a href="#faq" data-i18n="navFaq" class="hover:text-rustaviRed transition">კითხვები</a>
                 <a href="#contact" data-i18n="navContact" class="hover:text-rustaviRed transition">კონტაქტი</a>
             </nav>
 
@@ -103,7 +105,7 @@
                     </select>
                 </div>
 
-                <a href="#register" data-i18n="btnRegister" class="bg-rustaviRed text-white font-bold px-5 py-2.5 rounded-xl hover:bg-red-700 transition shadow-lg shadow-red-600/20 text-sm">
+                <a href="#register" data-i18n="btnRegister" class="bg-rustaviRed text-white font-bold px-6 py-2.5 rounded-xl hover:bg-red-700 transition shadow-lg shadow-red-600/20 text-sm">
                     ჩაეწერე აკადემიაში
                 </a>
             </div>
@@ -125,10 +127,12 @@
         <!-- Mobile Nav Dropdown -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 font-semibold">
             <a href="#about" data-i18n="navAbout" class="block py-2 text-slate-700 hover:text-rustaviRed">ჩვენ შესახებ</a>
+            <a href="#why-us" data-i18n="navWhyUs" class="block py-2 text-slate-700 hover:text-rustaviRed">რატომ აკადემია?</a>
             <a href="#coaches" data-i18n="navCoaches" class="block py-2 text-slate-700 hover:text-rustaviRed">მწვრთნელები</a>
             <a href="#teams" data-i18n="navTeams" class="block py-2 text-slate-700 hover:text-rustaviRed">გუნდები</a>
             <a href="#match-center" data-i18n="navMatchCenter" class="block py-2 text-slate-700 hover:text-rustaviRed">მატჩ ცენტრი</a>
             <a href="#news" data-i18n="navNews" class="block py-2 text-slate-700 hover:text-rustaviRed">სიახლეები</a>
+            <a href="#faq" data-i18n="navFaq" class="block py-2 text-slate-700 hover:text-rustaviRed">კითხვები</a>
             <a href="#contact" data-i18n="navContact" class="block py-2 text-slate-700 hover:text-rustaviRed">კონტაქტი</a>
             <a href="#register" data-i18n="btnRegister" class="block text-center bg-rustaviRed text-white font-bold py-3 rounded-xl mt-4">
                 ჩაეწერე აკადემიაში
@@ -205,148 +209,542 @@
         </div>
     </section>
 
-    <!-- Coaches Section -->
-    <section id="coaches" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <span data-i18n="coachesSubtitle" class="text-rustaviRed text-xs font-extrabold uppercase tracking-widest">პროფესიონალიზმი</span>
-            <h2 data-i18n="coachesTitle" class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">სამწვრთნელო შტაბი</h2>
-            <p data-i18n="coachesDesc" class="text-slate-600 mt-3 text-sm sm:text-base">ჩვენი მწვრთნელები ფლობენ UEFA-ს საერთაშორისო ლიცენზიებს და აქვთ მრავალწლიანი გამოცდილება ბავშვთა ფეხბურთში.</p>
+    <!-- 🌟 ACADEMY VS LOCAL CIRCLE COMPARISON SECTION 🌟 -->
+    <section id="why-us" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span data-i18n="whyUsSubtitle" class="text-rustaviRed text-xs font-extrabold uppercase tracking-widest">სწორი არჩევანი</span>
+            <h2 data-i18n="whyUsTitle" class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">რატომ აკადემია და არა უბრალოდ „უბნის წრე“?</h2>
+            <p data-i18n="whyUsDesc" class="text-slate-600 mt-3 text-sm sm:text-base">ნახეთ, რა განსხვავებაა ჩვეულებრივ მოყვარულთა წრესა და სფკ რუსთავის აკადემიას შორის</p>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Coach 1 -->
-            <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-rustaviRed transition duration-300 shadow-sm hover:shadow-xl group flex flex-col justify-between">
-                <div>
-                    <div class="relative w-28 h-28 mx-auto mb-5 rounded-full overflow-hidden border-2 border-rustaviRed p-1 bg-red-50">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Coach" class="w-full h-full object-cover rounded-full">
-                    </div>
-                    <span class="inline-block bg-red-100 text-rustaviRed text-[11px] font-bold px-2.5 py-0.5 rounded-full mb-2 mx-auto text-center w-full">UEFA A LICENCE</span>
-                    <h3 data-i18n="coach1Name" class="text-lg font-bold text-center text-slate-900 group-hover:text-rustaviRed transition">გიორგი დევდარიანი</h3>
-                    <p data-i18n="coach1Role" class="text-slate-500 text-xs text-center mt-1">აკადემიის მთავარი მწვრთნელი</p>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Card 1: Local Street Circle -->
+            <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute top-0 right-0 bg-slate-100 text-slate-500 font-bold text-xs px-4 py-2 rounded-bl-2xl">
+                    <i class="fa-solid fa-circle-xmark text-red-400 mr-1"></i> <span data-i18n="cardLocalHeader">უბნის ჩვეულებრივი წრე</span>
                 </div>
-                <button onclick="alert('გიორგი დევდარიანი: UEFA A')" data-i18n="btnBio" class="mt-5 w-full py-2.5 bg-slate-100 hover:bg-rustaviRed hover:text-white text-xs font-bold rounded-xl transition text-slate-700">
-                    ბიოგრაფია & კონტაქტი
-                </button>
+                
+                <div>
+                    <h3 data-i18n="cardLocalTitle" class="text-xl font-bold text-slate-700 mb-6">მოყვარულთა სკოლა / წრე</h3>
+                    <ul class="space-y-4 text-sm text-slate-600">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-xmark text-red-500 mt-1 text-base"></i>
+                            <div>
+                                <strong data-i18n="localFeature1Title" class="text-slate-800">შეზღუდული ინფრასტრუქტურა:</strong>
+                                <span data-i18n="localFeature1Desc">პატარა, ხშირად გაუმართავი ან არასტანდარტული უბნის მოედანი.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-xmark text-red-500 mt-1 text-base"></i>
+                            <div>
+                                <strong data-i18n="localFeature2Title" class="text-slate-800">მოყვარული მწვრთნელები:</strong>
+                                <span data-i18n="localFeature2Desc">ხშირად ულიცენზიო კადრები, ბავშვთა ფეხბურთის სპეციალური განათლების გარეშე.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-xmark text-red-500 mt-1 text-base"></i>
+                            <div>
+                                <strong data-i18n="localFeature3Title" class="text-slate-800">უბრალოდ „ბურთის გაგორება“:</strong>
+                                <span data-i18n="localFeature3Desc">ვარჯიშები სისტემური გეგმისა და დისციპლინური სტანდარტის გარეშე.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-xmark text-red-500 mt-1 text-base"></i>
+                            <div>
+                                <strong data-i18n="localFeature4Title" class="text-slate-800">პერსპექტივის გარეშე:</strong>
+                                <span data-i18n="localFeature4Desc">არ არსებობს შემდეგ საფეხურზე ან ოფიციალურ ჩემპიონატში გადასვლის შანსი.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <!-- Coach 2 -->
-            <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-rustaviRed transition duration-300 shadow-sm hover:shadow-xl group flex flex-col justify-between">
-                <div>
-                    <div class="relative w-28 h-28 mx-auto mb-5 rounded-full overflow-hidden border-2 border-rustaviRed p-1 bg-red-50">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Coach" class="w-full h-full object-cover rounded-full">
-                    </div>
-                    <span class="inline-block bg-amber-100 text-amber-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full mb-2 mx-auto text-center w-full">UEFA B LICENCE</span>
-                    <h3 data-i18n="coach2Name" class="text-lg font-bold text-center text-slate-900 group-hover:text-rustaviRed transition">დავით ქავთარაძე</h3>
-                    <p data-i18n="coach2Role" class="text-slate-500 text-xs text-center mt-1">U-14 გუნდის მწვრთნელი</p>
+            <!-- Card 2: FC Rustavi Academy (Featured) -->
+            <div class="bg-gradient-to-br from-white via-red-50/30 to-white rounded-3xl p-8 border-2 border-rustaviRed shadow-xl relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute top-0 right-0 bg-rustaviRed text-white font-bold text-xs px-4 py-2 rounded-bl-2xl shadow">
+                    <i class="fa-solid fa-circle-check text-rustaviYellow mr-1"></i> <span data-i18n="cardAcademyHeader">პროფესიონალური არჩევანი</span>
                 </div>
-                <button onclick="alert('დავით ქავთარაძე: UEFA B')" data-i18n="btnBio" class="mt-5 w-full py-2.5 bg-slate-100 hover:bg-rustaviRed hover:text-white text-xs font-bold rounded-xl transition text-slate-700">
-                    ბიოგრაფია & კონტაქტი
-                </button>
+
+                <div>
+                    <h3 data-i18n="cardAcademyTitle" class="text-xl font-black text-slate-900 mb-6 flex items-center gap-2">
+                        <span>სფკ რუსთავის აკადემია</span>
+                        <span class="text-rustaviRed text-sm">⭐</span>
+                    </h3>
+                    <ul class="space-y-4 text-sm text-slate-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-green-600 mt-1 text-base font-black"></i>
+                            <div>
+                                <strong data-i18n="academyFeature1Title" class="text-slate-900">სტანდარტული ბაზა:</strong>
+                                <span data-i18n="academyFeature1Desc">სტანდარტული ბუნებრივი და ხელოვნურსაფარიანი მოედნები რუსთავში.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-green-600 mt-1 text-base font-black"></i>
+                            <div>
+                                <strong data-i18n="academyFeature2Title" class="text-slate-900">UEFA-ს ლიცენზია:</strong>
+                                <span data-i18n="academyFeature2Desc">საერთაშორისო სერტიფიკატის მქონე პროფესიონალი მწვრთნელები.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-green-600 mt-1 text-base font-black"></i>
+                            <div>
+                                <strong data-i18n="academyFeature3Title" class="text-slate-900">ევროპული მეთოდოლოგია:</strong>
+                                <span data-i18n="academyFeature3Desc">სისტემური განვითარება, დისციპლინა, ტაქტიკური აზროვნება და გუნდურობა.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-green-600 mt-1 text-base font-black"></i>
+                            <div>
+                                <strong data-i18n="academyFeature4Title" class="text-slate-900">რეალური ტრამპლინი:</strong>
+                                <span data-i18n="academyFeature4Desc">მონაწილეობა ეროვნულ ჩემპიონატში და შანსი სფკ რუსთავის პირველ გუნდში მოხვედრის.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-red-100 flex items-center justify-between">
+                    <span data-i18n="cardAcademyFooter" class="text-xs font-bold text-slate-500">მომავალი ჩემპიონები იზრდებიან აქ!</span>
+                    <a href="#register" data-i18n="btnRegister" class="bg-rustaviRed text-white font-bold text-xs px-4 py-2 rounded-xl hover:bg-red-700 transition">
+                        ჩაეწერე აკადემიაში
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaches Section -->
+    <section id="coaches" class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span data-i18n="coachesSubtitle" class="text-rustaviRed text-xs font-extrabold uppercase tracking-widest">პროფესიონალიზმი</span>
+                <h2 data-i18n="coachesTitle" class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">სამწვრთნელო შტაბი</h2>
+                <p data-i18n="coachesDesc" class="text-slate-600 mt-3 text-sm sm:text-base">ჩვენი მწვრთნელები ფლობენ UEFA-ს საერთაშორისო ლიცენზიებს და აქვთ მრავალწლიანი გამოცდილება ბავშვთა ფეხბურთში.</p>
             </div>
 
-            <!-- Coach 3 -->
-            <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-rustaviRed transition duration-300 shadow-sm hover:shadow-xl group flex flex-col justify-between">
-                <div>
-                    <div class="relative w-28 h-28 mx-auto mb-5 rounded-full overflow-hidden border-2 border-rustaviRed p-1 bg-red-50">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Coach" class="w-full h-full object-cover rounded-full">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Coach 1 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-rustaviRed transition duration-300 shadow-sm hover:shadow-xl group flex flex-col justify-between">
+                    <div>
+                        <div class="relative w-28 h-28 mx-auto mb-5 rounded-full overflow-hidden border-2 border-rustaviRed p-1 bg-red-50">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Coach" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <span class="inline-block bg-red-100 text-rustaviRed text-[11px] font-bold px-2.5 py-0.5 rounded-full mb-2 mx-auto text-center w-full">UEFA A LICENCE</span>
+                        <h3 data-i18n="coach1Name" class="text-lg font-bold text-center text-slate-900 group-hover:text-rustaviRed transition">გიორგი დევდარიანი</h3>
+                        <p data-i18n="coach1Role" class="text-slate-500 text-xs text-center mt-1">აკადემიის მთავარი მწვრთნელი</p>
                     </div>
-                    <span class="inline-block bg-amber-100 text-amber-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full mb-2 mx-auto text-center w-full">UEFA B LICENCE</span>
-                    <h3 data-i18n="coach3Name" class="text-lg font-bold text-center text-slate-900 group-hover:text-rustaviRed transition">ლევან მჭედლიძე</h3>
-                    <p data-i18n="coach3Role" class="text-slate-500 text-xs text-center mt-1">U-10 / U-12 მწვრთნელი</p>
+                    <button onclick="alert('გიორგი დევდარიანი: UEFA A')" data-i18n="btnBio" class="mt-5 w-full py-2.5 bg-slate-100 hover:bg-rustaviRed hover:text-white text-xs font-bold rounded-xl transition text-slate-700">
+                        ბიოგრაფია & კონტაქტი
+                    </button>
                 </div>
-                <button onclick="alert('ლევან მჭედლიძე: UEFA B')" data-i18n="btnBio" class="mt-5 w-full py-2.5 bg-slate-100 hover:bg-rustaviRed hover:text-white text-xs font-bold rounded-xl transition text-slate-700">
-                    ბიოგრაფია & კონტაქტი
-                </button>
-            </div>
 
-            <!-- Coach 4 -->
-            <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-rustaviRed transition duration-300 shadow-sm hover:shadow-xl group flex flex-col justify-between">
-                <div>
-                    <div class="relative w-28 h-28 mx-auto mb-5 rounded-full overflow-hidden border-2 border-rustaviRed p-1 bg-red-50">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80" alt="Coach" class="w-full h-full object-cover rounded-full">
+                <!-- Coach 2 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-rustaviRed transition duration-300 shadow-sm hover:shadow-xl group flex flex-col justify-between">
+                    <div>
+                        <div class="relative w-28 h-28 mx-auto mb-5 rounded-full overflow-hidden border-2 border-rustaviRed p-1 bg-red-50">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Coach" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <span class="inline-block bg-amber-100 text-amber-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full mb-2 mx-auto text-center w-full">UEFA B LICENCE</span>
+                        <h3 data-i18n="coach2Name" class="text-lg font-bold text-center text-slate-900 group-hover:text-rustaviRed transition">დავით ქავთარაძე</h3>
+                        <p data-i18n="coach2Role" class="text-slate-500 text-xs text-center mt-1">U-14 გუნდის მწვრთნელი</p>
                     </div>
-                    <span class="inline-block bg-blue-100 text-blue-700 text-[11px] font-bold px-2.5 py-0.5 rounded-full mb-2 mx-auto text-center w-full">GK COACH</span>
-                    <h3 data-i18n="coach4Name" class="text-lg font-bold text-center text-slate-900 group-hover:text-rustaviRed transition">ირაკლი ზოიძე</h3>
-                    <p data-i18n="coach4Role" class="text-slate-500 text-xs text-center mt-1">მეკარეების მწვრთნელი</p>
+                    <button onclick="alert('დავით ქავთარაძე: UEFA B')" data-i18n="btnBio" class="mt-5 w-full py-2.5 bg-slate-100 hover:bg-rustaviRed hover:text-white text-xs font-bold rounded-xl transition text-slate-700">
+                        ბიოგრაფია & კონტაქტი
+                    </button>
                 </div>
-                <button onclick="alert('ირაკლი ზოიძე: GK')" data-i18n="btnBio" class="mt-5 w-full py-2.5 bg-slate-100 hover:bg-rustaviRed hover:text-white text-xs font-bold rounded-xl transition text-slate-700">
-                    ბიოგრაფია & კონტაქტი
-                </button>
+
+                <!-- Coach 3 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-rustaviRed transition duration-300 shadow-sm hover:shadow-xl group flex flex-col justify-between">
+                    <div>
+                        <div class="relative w-28 h-28 mx-auto mb-5 rounded-full overflow-hidden border-2 border-rustaviRed p-1 bg-red-50">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Coach" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <span class="inline-block bg-amber-100 text-amber-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full mb-2 mx-auto text-center w-full">UEFA B LICENCE</span>
+                        <h3 data-i18n="coach3Name" class="text-lg font-bold text-center text-slate-900 group-hover:text-rustaviRed transition">ლევან მჭედლიძე</h3>
+                        <p data-i18n="coach3Role" class="text-slate-500 text-xs text-center mt-1">U-10 / U-12 მწვრთნელი</p>
+                    </div>
+                    <button onclick="alert('ლევან მჭედლიძე: UEFA B')" data-i18n="btnBio" class="mt-5 w-full py-2.5 bg-slate-100 hover:bg-rustaviRed hover:text-white text-xs font-bold rounded-xl transition text-slate-700">
+                        ბიოგრაფია & კონტაქტი
+                    </button>
+                </div>
+
+                <!-- Coach 4 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-rustaviRed transition duration-300 shadow-sm hover:shadow-xl group flex flex-col justify-between">
+                    <div>
+                        <div class="relative w-28 h-28 mx-auto mb-5 rounded-full overflow-hidden border-2 border-rustaviRed p-1 bg-red-50">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80" alt="Coach" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <span class="inline-block bg-blue-100 text-blue-700 text-[11px] font-bold px-2.5 py-0.5 rounded-full mb-2 mx-auto text-center w-full">GK COACH</span>
+                        <h3 data-i18n="coach4Name" class="text-lg font-bold text-center text-slate-900 group-hover:text-rustaviRed transition">ირაკლი ზოიძე</h3>
+                        <p data-i18n="coach4Role" class="text-slate-500 text-xs text-center mt-1">მეკარეების მწვრთნელი</p>
+                    </div>
+                    <button onclick="alert('ირაკლი ზოიძე: GK')" data-i18n="btnBio" class="mt-5 w-full py-2.5 bg-slate-100 hover:bg-rustaviRed hover:text-white text-xs font-bold rounded-xl transition text-slate-700">
+                        ბიოგრაფია & კონტაქტი
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Teams & Age Groups Section -->
-    <section id="teams" class="py-20 bg-slate-100 border-y border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span data-i18n="teamsSubtitle" class="text-rustaviRed text-xs font-extrabold uppercase tracking-widest">ასაკობრივი ჯგუფები</span>
-                <h2 data-i18n="teamsTitle" class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">ჩვენი გუნდები</h2>
-                <p data-i18n="teamsDesc" class="text-slate-600 mt-3 text-sm sm:text-base">აკადემიაში ვარჯიშობენ 6-დან 18 წლამდე ასაკის ბავშვები</p>
+    <section id="teams" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <span data-i18n="teamsSubtitle" class="text-rustaviRed text-xs font-extrabold uppercase tracking-widest">ასაკობრივი ჯგუფები</span>
+            <h2 data-i18n="teamsTitle" class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">ჩვენი გუნდები</h2>
+            <p data-i18n="teamsDesc" class="text-slate-600 mt-3 text-sm sm:text-base">აკადემიაში ვარჯიშობენ 6-დან 18 წლამდე ასაკის ბავშვები</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- U8 -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group">
+                <div class="h-40 relative bg-slate-200 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=500&q=80" alt="U8 Team" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 left-3 bg-rustaviRed text-white font-black text-xs px-3 py-1 rounded-lg">U-8</span>
+                </div>
+                <div class="p-5">
+                    <h4 class="font-extrabold text-lg text-slate-900">2018-2019</h4>
+                    <p data-i18n="u8Desc" class="text-xs text-slate-500 mt-1">დაწყებითი მომზადება, მოტორიკის განვითარება და თამაშით სწავლება.</p>
+                    <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center text-xs text-slate-700">
+                        <span><i class="fa-regular fa-clock text-rustaviRed mr-1"></i> <span data-i18n="perWeek3">კვირაში 3-ჯერ</span></span>
+                        <span class="font-bold text-rustaviRed">60 ₾ / <span data-i18n="perMonth">თვე</span></span>
+                    </div>
+                </div>
             </div>
 
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- U8 -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group">
-                    <div class="h-40 relative bg-slate-200 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=500&q=80" alt="U8 Team" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 left-3 bg-rustaviRed text-white font-black text-xs px-3 py-1 rounded-lg">U-8</span>
+            <!-- U10 -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group">
+                <div class="h-40 relative bg-slate-200 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=500&q=80" alt="U10 Team" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 left-3 bg-amber-500 text-white font-black text-xs px-3 py-1 rounded-lg">U-10</span>
+                </div>
+                <div class="p-5">
+                    <h4 class="font-extrabold text-lg text-slate-900">2016-2017</h4>
+                    <p data-i18n="u10Desc" class="text-xs text-slate-500 mt-1">ბაზისური ტექნიკა, ბურთის ფლობა და ინდივიდუალური ოსტატობა.</p>
+                    <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center text-xs text-slate-700">
+                        <span><i class="fa-regular fa-clock text-rustaviRed mr-1"></i> <span data-i18n="perWeek3">კვირაში 3-ჯერ</span></span>
+                        <span class="font-bold text-rustaviRed">70 ₾ / <span data-i18n="perMonth">თვე</span></span>
                     </div>
-                    <div class="p-5">
-                        <h4 class="font-extrabold text-lg text-slate-900">2018-2019</h4>
-                        <p data-i18n="u8Desc" class="text-xs text-slate-500 mt-1">დაწყებითი მომზადება, მოტორიკის განვითარება და თამაშით სწავლება.</p>
-                        <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center text-xs text-slate-700">
-                            <span><i class="fa-regular fa-clock text-rustaviRed mr-1"></i> <span data-i18n="perWeek3">კვირაში 3-ჯერ</span></span>
-                            <span class="font-bold text-rustaviRed">60 ₾ / <span data-i18n="perMonth">თვე</span></span>
+                </div>
+            </div>
+
+            <!-- U12 -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group">
+                <div class="h-40 relative bg-slate-200 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=500&q=80" alt="U12 Team" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 left-3 bg-rustaviRed text-white font-black text-xs px-3 py-1 rounded-lg">U-12</span>
+                </div>
+                <div class="p-5">
+                    <h4 class="font-extrabold text-lg text-slate-900">2014-2015</h4>
+                    <p data-i18n="u12Desc" class="text-xs text-slate-500 mt-1">ტაქტიკური საფუძვლები, პოზიციური თამაში და ამხანაგური მატჩები.</p>
+                    <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center text-xs text-slate-700">
+                        <span><i class="fa-regular fa-clock text-rustaviRed mr-1"></i> <span data-i18n="perWeek4">კვირაში 4-ჯერ</span></span>
+                        <span class="font-bold text-rustaviRed">80 ₾ / <span data-i18n="perMonth">თვე</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- U14 -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group">
+                <div class="h-40 relative bg-slate-200 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=500&q=80" alt="U14 Team" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 left-3 bg-amber-500 text-white font-black text-xs px-3 py-1 rounded-lg">U-14</span>
+                </div>
+                <div class="p-5">
+                    <h4 class="font-extrabold text-lg text-slate-900">2012-2013</h4>
+                    <p data-i18n="u14Desc" class="text-xs text-slate-500 mt-1">სამატჩო პრაქტიკა ეროვნულ ჩემპიონატში, ფიზიკური და ტაქტიკური მომზადება.</p>
+                    <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center text-xs text-slate-700">
+                        <span><i class="fa-regular fa-clock text-rustaviRed mr-1"></i> <span data-i18n="perWeek4">კვირაში 4-ჯერ</span></span>
+                        <span class="font-bold text-rustaviRed">90 ₾ / <span data-i18n="perMonth">თვე</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Match Center (Calendar, Standings & Stats) -->
+    <section id="match-center" class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                <div>
+                    <span class="text-rustaviRed text-xs font-extrabold uppercase tracking-widest" data-i18n="matchCenterSubtitle">შედეგები & განრიგი</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-1" data-i18n="navMatchCenter">მატჩ ცენტრი</h2>
+                </div>
+                
+                <!-- Tab Controls -->
+                <div class="flex bg-slate-200 p-1.5 rounded-xl text-xs sm:text-sm font-bold">
+                    <button onclick="switchTab('matches')" id="tab-btn-matches" class="px-4 py-2 rounded-lg bg-rustaviRed text-white transition shadow-sm" data-i18n="matchesTab">მომავალი თამაშები</button>
+                    <button onclick="switchTab('table')" id="tab-btn-table" class="px-4 py-2 rounded-lg text-slate-700 hover:text-slate-900 transition" data-i18n="tableTab">სატურნირო ცხრილი</button>
+                    <button onclick="switchTab('stats')" id="tab-btn-stats" class="px-4 py-2 rounded-lg text-slate-700 hover:text-slate-900 transition" data-i18n="statsTab">ბომბარდირები</button>
+                </div>
+            </div>
+
+            <!-- Tab Content 1: Matches -->
+            <div id="tab-matches" class="space-y-4">
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-red-100 text-rustaviRed font-bold text-xs px-3 py-1 rounded-full">U-14 ჩემპიონატი</span>
+                        <span class="text-slate-500 text-xs"><i class="fa-regular fa-calendar mr-1"></i> 24 ოქტომბერი, 2026 | 16:00</span>
+                    </div>
+                    <div class="flex items-center gap-6 font-bold text-base sm:text-lg">
+                        <span class="text-slate-900 flex items-center gap-2">სფკ რუსთავი <span class="text-xs bg-rustaviRed text-white px-1.5 py-0.5 rounded">H</span></span>
+                        <span class="text-rustaviRed font-black text-sm px-3 py-1 bg-red-50 rounded-lg">VS</span>
+                        <span class="text-slate-900 flex items-center gap-2"><span class="text-xs bg-slate-200 text-slate-700 px-1.5 py-0.5 rounded">A</span> დინამო თბილისი</span>
+                    </div>
+                    <span class="text-xs text-slate-600 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
+                        <i class="fa-solid fa-location-dot text-rustaviRed mr-1"></i> რუსთავის ცენტრალური სტადიონი
+                    </span>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-amber-100 text-amber-800 font-bold text-xs px-3 py-1 rounded-full">U-12 ლიგა</span>
+                        <span class="text-slate-500 text-xs"><i class="fa-regular fa-calendar mr-1"></i> 28 ოქტომბერი, 2026 | 14:00</span>
+                    </div>
+                    <div class="flex items-center gap-6 font-bold text-base sm:text-lg">
+                        <span class="text-slate-900 flex items-center gap-2">საბურთალო <span class="text-xs bg-slate-200 text-slate-700 px-1.5 py-0.5 rounded">H</span></span>
+                        <span class="text-rustaviRed font-black text-sm px-3 py-1 bg-red-50 rounded-lg">VS</span>
+                        <span class="text-slate-900 flex items-center gap-2"><span class="text-xs bg-rustaviRed text-white px-1.5 py-0.5 rounded">A</span> სფკ რუსთავი</span>
+                    </div>
+                    <span class="text-xs text-slate-600 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
+                        <i class="fa-solid fa-location-dot text-rustaviRed mr-1"></i> თბილისი, ბენდელას სტადიონი
+                    </span>
+                </div>
+            </div>
+
+            <!-- Tab Content 2: Standings Table -->
+            <div id="tab-table" class="hidden bg-white rounded-2xl border border-slate-200 shadow-sm overflow-x-auto">
+                <table class="w-full text-left text-sm text-slate-700">
+                    <thead class="bg-slate-100 text-xs font-bold uppercase text-slate-600">
+                        <tr>
+                            <th class="p-4">#</th>
+                            <th class="p-4">გუნდი (U-14)</th>
+                            <th class="p-4 text-center">თ</th>
+                            <th class="p-4 text-center">მ</th>
+                            <th class="p-4 text-center">ფ</th>
+                            <th class="p-4 text-center">წ</th>
+                            <th class="p-4 text-center">გზ</th>
+                            <th class="p-4 text-center font-bold text-slate-900">ქ</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        <tr class="bg-red-50/80 font-bold text-slate-900">
+                            <td class="p-4 text-rustaviRed font-black">1</td>
+                            <td class="p-4 flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-rustaviRed"></span> სფკ რუსთავი
+                            </td>
+                            <td class="p-4 text-center">8</td>
+                            <td class="p-4 text-center">7</td>
+                            <td class="p-4 text-center">1</td>
+                            <td class="p-4 text-center">0</td>
+                            <td class="p-4 text-center">24:5</td>
+                            <td class="p-4 text-center font-black text-rustaviRed text-base">22</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4">2</td>
+                            <td class="p-4">დინამო თბილისი</td>
+                            <td class="p-4 text-center">8</td>
+                            <td class="p-4 text-center">6</td>
+                            <td class="p-4 text-center">1</td>
+                            <td class="p-4 text-center">1</td>
+                            <td class="p-4 text-center">20:7</td>
+                            <td class="p-4 text-center font-bold text-slate-900">19</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4">3</td>
+                            <td class="p-4">იბერია 1999</td>
+                            <td class="p-4 text-center">8</td>
+                            <td class="p-4 text-center">5</td>
+                            <td class="p-4 text-center">2</td>
+                            <td class="p-4 text-center">1</td>
+                            <td class="p-4 text-center">18:9</td>
+                            <td class="p-4 text-center font-bold text-slate-900">17</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Tab Content 3: Top Scorers -->
+            <div id="tab-stats" class="hidden grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-futbol text-rustaviRed"></i> ბომბარდირები (U-14)
+                    </h4>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
+                            <span class="font-bold text-slate-800">1. ნიკოლოზ კაპანაძე</span>
+                            <span class="text-rustaviRed font-black">12 გოლი</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
+                            <span class="font-bold text-slate-800">2. დავით გიორგაძე</span>
+                            <span class="text-rustaviRed font-black">9 გოლი</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
+                            <span class="font-bold text-slate-800">3. ლუკა მაისურაძე</span>
+                            <span class="text-rustaviRed font-black">7 გოლი</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- U10 -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group">
-                    <div class="h-40 relative bg-slate-200 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=500&q=80" alt="U10 Team" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 left-3 bg-amber-500 text-white font-black text-xs px-3 py-1 rounded-lg">U-10</span>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="font-extrabold text-lg text-slate-900">2016-2017</h4>
-                        <p data-i18n="u10Desc" class="text-xs text-slate-500 mt-1">ბაზისური ტექნიკა, ბურთის ფლობა და ინდივიდუალური ოსტატობა.</p>
-                        <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center text-xs text-slate-700">
-                            <span><i class="fa-regular fa-clock text-rustaviRed mr-1"></i> <span data-i18n="perWeek3">კვირაში 3-ჯერ</span></span>
-                            <span class="font-bold text-rustaviRed">70 ₾ / <span data-i18n="perMonth">თვე</span></span>
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-hands-holding text-rustaviRed"></i> "მშრალი" მატჩები (მეკარეები)
+                    </h4>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
+                            <span class="font-bold text-slate-800">1. გიორგი ბერიძე</span>
+                            <span class="text-rustaviRed font-black">5 Clean Sheet</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
+                            <span class="font-bold text-slate-800">2. ალექსანდრე ხოშტარია</span>
+                            <span class="text-rustaviRed font-black">3 Clean Sheet</span>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- U12 -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group">
-                    <div class="h-40 relative bg-slate-200 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=500&q=80" alt="U12 Team" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 left-3 bg-rustaviRed text-white font-black text-xs px-3 py-1 rounded-lg">U-12</span>
+    <!-- News Section -->
+    <section id="news" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <span class="text-rustaviRed text-xs font-extrabold uppercase tracking-widest" data-i18n="newsSubtitle">სიახლეები</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-1" data-i18n="newsTitle">აკადემიის ცხოვრება</h2>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- News Item 1 -->
+            <article class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group flex flex-col justify-between">
+                <div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="News" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-rustaviRed text-[11px] font-bold px-3 py-1 rounded-full shadow">18 ოქტ, 2026</span>
                     </div>
-                    <div class="p-5">
-                        <h4 class="font-extrabold text-lg text-slate-900">2014-2015</h4>
-                        <p data-i18n="u12Desc" class="text-xs text-slate-500 mt-1">ტაქტიკური საფუძვლები, პოზიციური თამაში და ამხანაგური მატჩები.</p>
-                        <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center text-xs text-slate-700">
-                            <span><i class="fa-regular fa-clock text-rustaviRed mr-1"></i> <span data-i18n="perWeek4">კვირაში 4-ჯერ</span></span>
-                            <span class="font-bold text-rustaviRed">80 ₾ / <span data-i18n="perMonth">თვე</span></span>
-                        </div>
+                    <div class="p-6">
+                        <h3 class="font-extrabold text-lg text-slate-900 group-hover:text-rustaviRed transition leading-snug" data-i18n="news1Title">
+                            სფკ რუსთავის აკადემიის ახალი სეზონი ოფიციალურად გაიხსნა!
+                        </h3>
+                        <p class="text-slate-600 text-xs mt-3 line-clamp-3" data-i18n="news1Desc">
+                            2026 წლის შემოდგომის სეზონი რეკორდული რაოდენობის ახალი მოსწავლით დაიწყო. განახლდა ინფრასტრუქტურა და სავარჯიშო ინვენტარი.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="alert('სრული სტატია მალე დაემატება!')" class="text-xs font-bold text-rustaviRed hover:text-red-700 flex items-center gap-1">
+                        <span data-i18n="readMore">სრულად წაკითხვა</span> <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- News Item 2 -->
+            <article class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group flex flex-col justify-between">
+                <div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=600&q=80" alt="News" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-rustaviRed text-[11px] font-bold px-3 py-1 rounded-full shadow">12 ოქტ, 2026</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-extrabold text-lg text-slate-900 group-hover:text-rustaviRed transition leading-snug" data-i18n="news2Title">
+                            U-14 გუნდმა საერთაშორისო ტურნირზე II ადგილი დაიკავა
+                        </h3>
+                        <p class="text-slate-600 text-xs mt-3 line-clamp-3" data-i18n="news2Desc">
+                            ჩვენმა ახალგაზრდა ფეხბურთელებმა ბათუმში გამართულ ტურნირზე ღირსეული თამაში აჩვენეს და ვერცხლის მედლები მოიპოვეს.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="alert('სრული სტატია მალე დაემატება!')" class="text-xs font-bold text-rustaviRed hover:text-red-700 flex items-center gap-1">
+                        <span data-i18n="readMore">სრულად წაკითხვა</span> <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- News Item 3 -->
+            <article class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group flex flex-col justify-between">
+                <div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="News" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-rustaviRed text-[11px] font-bold px-3 py-1 rounded-full shadow">05 ოქტ, 2026</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-extrabold text-lg text-slate-900 group-hover:text-rustaviRed transition leading-snug" data-i18n="news3Title">
+                            მასტერკლასი UEFA-ს ინსტრუქტორისგან
+                        </h3>
+                        <p class="text-slate-600 text-xs mt-3 line-clamp-3" data-i18n="news3Desc">
+                            აკადემიის მწვრთნელებისთვის ჩატარდა სპეციალური სემინარი თანამედროვე საფეხბურთო მეთოდოლოგიის შესახებ.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="alert('სრული სტატია მალე დაემატება!')" class="text-xs font-bold text-rustaviRed hover:text-red-700 flex items-center gap-1">
+                        <span data-i18n="readMore">სრულად წაკითხვა</span> <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- 🌟 UPDATED FAQ SECTION (Accordion Style) 🌟 -->
+    <section id="faq" class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span data-i18n="faqSubtitle" class="text-rustaviRed text-xs font-extrabold uppercase tracking-widest">პასუხები კითხვებზე</span>
+                <h2 data-i18n="faqTitle" class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">ხშირად დასმული კითხვები</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- Q1 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(1)" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center gap-4 hover:text-rustaviRed transition">
+                        <span data-i18n="faqQ1">რა ღირს აკადემიაში სწავლა?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-rustaviRed transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-ans-1" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium border-t border-slate-100 pt-3">
+                        <span data-i18n="faqA1">სწავლის ყოველთვიური საფასური შეადგენს 60 ₾-დან 90 ₾-მდე (ასაკობრივი ჯგუფის მიხედვით: U-8, U-10, U-12, U-14). ფასში შედის კვირაში 3-4-ჯერადი ვარჯიში, ოფიციალურ ტურნირებში მონაწილეობა და პროფესიონალური მეთოდოლოგიით სწავლება.</span>
                     </div>
                 </div>
 
-                <!-- U14 -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group">
-                    <div class="h-40 relative bg-slate-200 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=500&q=80" alt="U14 Team" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 left-3 bg-amber-500 text-white font-black text-xs px-3 py-1 rounded-lg">U-14</span>
+                <!-- Q2 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(2)" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center gap-4 hover:text-rustaviRed transition">
+                        <span data-i18n="faqQ2">რით განსხვავდება აკადემია უბნის საფეხბურთო წრისგან?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-rustaviRed transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-ans-2" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium border-t border-slate-100 pt-3">
+                        <span data-i18n="faqA2">აკადემიაში ვარჯიში მიმდინარეობს UEFA-ს ლიცენზირებული მწვრთნელების მიერ, სტანდარტულ მოედნებზე. ჩვენთან ყურადღება ექცევა არა უბრალოდ თამაშს, არამედ ბავშვის ფიზიკურ განვითარებას, დისციპლინას, ტაქტიკურ აზროვნებასა და რეალურ პროფესიულ პერსპექტივას.</span>
                     </div>
-                    <div class="p-5">
-                        <h4 class="font-extrabold text-lg text-slate-900">2012-2013</h4>
-                        <p data-i18n="u14Desc" class="text-xs text-slate-500 mt-1">სამატჩო პრაქტიკა ეროვნულ ჩემპიონატში, ფიზიკური და ტაქტიკური მომზადება.</p>
-                        <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center text-xs text-slate-700">
-                            <span><i class="fa-regular fa-clock text-rustaviRed mr-1"></i> <span data-i18n="perWeek4">კვირაში 4-ჯერ</span></span>
-                            <span class="font-bold text-rustaviRed">90 ₾ / <span data-i18n="perMonth">თვე</span></span>
-                        </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(3)" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center gap-4 hover:text-rustaviRed transition">
+                        <span data-i18n="faqQ3">რა ასაკიდან ხდება ბავშვების მიღება?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-rustaviRed transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-ans-3" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium border-t border-slate-100 pt-3">
+                        <span data-i18n="faqA3">აკადემიაში ვიღებთ ბავშვებს 6-დან 18 წლამდე. ყველა ასაკობრივ ჯგუფს აქვს თავისი ინდივიდუალური, ასაკზე მორგებული სავარჯიშო პროგრამა.</span>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(4)" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center gap-4 hover:text-rustaviRed transition">
+                        <span data-i18n="faqQ4">რა არის საჭირო პირველი საცდელი ვარჯიშისთვის?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-rustaviRed transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-ans-4" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium border-t border-slate-100 pt-3">
+                        <span data-i18n="faqA4">პირველი ვარჯიშისთვის საკმარისია მოსახერხებელი სპორტული ფორმა (შორტი/მაისური), ბოტასები ან ბუცები და წყალი.</span>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(5)" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center gap-4 hover:text-rustaviRed transition">
+                        <span data-i18n="faqQ5">როგორ ხდება ჯგუფების გადანაწილება?</span>
+                        <i id="faq-icon-5" class="fa-solid fa-chevron-down text-rustaviRed transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-ans-5" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium border-t border-slate-100 pt-3">
+                        <span data-i18n="faqA5">ბავშვები ჯგუფდებიან ასაკისა და მომზადების დონის მიხედვით, რათა თითოეულმა მათგანმა მაქსიმალურად კომფორტულად და ეფექტურად შეძლოს განვითარება.</span>
                     </div>
                 </div>
             </div>
@@ -450,10 +848,12 @@
                 clubName: "რუსთავი",
                 academyText: "აკადემია",
                 navAbout: "ჩვენ შესახებ",
+                navWhyUs: "რატომ აკადემია?",
                 navCoaches: "მწვრთნელები",
                 navTeams: "გუნდები",
                 navMatchCenter: "მატჩ ცენტრი",
                 navNews: "სიახლეები",
+                navFaq: "კითხვები",
                 navContact: "კონტაქტი",
                 btnRegister: "ჩაეწერე აკადემიაში",
                 heroBadge: "⚽ მიღება დაწყებულია 2026 წლის სეზონისთვის!",
@@ -468,6 +868,30 @@
                 statFields: "სტანდარტული მოედანი",
                 infraTitle: "პროფესიონალური ინფრასტრუქტურა",
                 infraDesc: "ბუნებრივი და ხელოვნურსაფარიანი მოედნები რუსთავში",
+                whyUsSubtitle: "სწორი არჩევანი",
+                whyUsTitle: "რატომ აკადემია და არა უბრალოდ „უბნის წრე“?",
+                whyUsDesc: "ნახეთ, რა განსხვავებაა ჩვეულებრივ მოყვარულთა წრესა და სფკ რუსთავის აკადემიას შორის",
+                cardLocalHeader: "უბნის ჩვეულებრივი წრე",
+                cardLocalTitle: "მოყვარულთა სკოლა / წრე",
+                localFeature1Title: "შეზღუდული ინფრასტრუქტურა:",
+                localFeature1Desc: "პატარა, ხშირად გაუმართავი ან არასტანდარტული უბნის მოედანი.",
+                localFeature2Title: "მოყვარული მწვრთნელები:",
+                localFeature2Desc: "ხშირად ულიცენზიო კადრები, ბავშვთა ფეხბურთის სპეციალური განათლების გარეშე.",
+                localFeature3Title: "უბრალოდ „ბურთის გაგორება“:",
+                localFeature3Desc: "ვარჯიშები სისტემური გეგმისა და დისციპლინური სტანდარტის გარეშე.",
+                localFeature4Title: "პერსპექტივის გარეშე:",
+                localFeature4Desc: "არ არსებობს შემდეგ საფეხურზე ან ოფიციალურ ჩემპიონატში გადასვლის შანსი.",
+                cardAcademyHeader: "პროფესიონალური არჩევანი",
+                cardAcademyTitle: "სფკ რუსთავის აკადემია",
+                academyFeature1Title: "სტანდარტული ბაზა:",
+                academyFeature1Desc: "სტანდარტული ბუნებრივი და ხელოვნურსაფარიანი მოედნები რუსთავში.",
+                academyFeature2Title: "UEFA-ს ლიცენზია:",
+                academyFeature2Desc: "საერთაშორისო სერტიფიკატის მქონე პროფესიონალი მწვრთნელები.",
+                academyFeature3Title: "ევროპული მეთოდოლოგია:",
+                academyFeature3Desc: "სისტემური განვითარება, დისციპლინა, ტაქტიკური აზროვნება და გუნდურობა.",
+                academyFeature4Title: "რეალური ტრამპლინი:",
+                academyFeature4Desc: "მონაწილეობა ეროვნულ ჩემპიონატში და შანსი სფკ რუსთავის პირველ გუნდში მოხვედრის.",
+                cardAcademyFooter: "მომავალი ჩემპიონები იზრდებიან აქ!",
                 coachesSubtitle: "პროფესიონალიზმი",
                 coachesTitle: "სამწვრთნელო შტაბი",
                 coachesDesc: "ჩვენი მწვრთნელები ფლობენ UEFA-ს საერთაშორისო ლიცენზიებს და აქვთ მრავალწლიანი გამოცდილება ბავშვთა ფეხბურთში.",
@@ -490,6 +914,31 @@
                 perWeek3: "კვირაში 3-ჯერ",
                 perWeek4: "კვირაში 4-ჯერ",
                 perMonth: "თვე",
+                matchCenterSubtitle: "შედეგები & განრიგი",
+                matchesTab: "მომავალი თამაშები",
+                tableTab: "სატურნირო ცხრილი",
+                statsTab: "ბომბარდირები",
+                newsSubtitle: "სიახლეები",
+                newsTitle: "აკადემიის ცხოვრება",
+                news1Title: "სფკ რუსთავის აკადემიის ახალი სეზონი ოფიციალურად გაიხსნა!",
+                news1Desc: "2026 წლის შემოდგომის სეზონი რეკორდული რაოდენობის ახალი მოსწავლით დაიწყო. განახლდა ინფრასტრუქტურა და სავარჯიშო ინვენტარი.",
+                news2Title: "U-14 გუნდმა საერთაშორისო ტურნირზე II ადგილი დაიკავა",
+                news2Desc: "ჩვენმა ახალგაზრდა ფეხბურთელებმა ბათუმში გამართულ ტურნირზე ღირსეული თამაში აჩვენეს და ვერცხლის მედლები მოიპოვეს.",
+                news3Title: "მასტერკლასი UEFA-ს ინსტრუქტორისგან",
+                news3Desc: "აკადემიის მწვრთნელებისთვის ჩატარდა სპეციალური სემინარი თანამედროვე საფეხბურთო მეთოდოლოგიის შესახებ.",
+                readMore: "სრულად წაკითხვა",
+                faqSubtitle: "პასუხები კითხვებზე",
+                faqTitle: "ხშირად დასმული კითხვები",
+                faqQ1: "რა ღირს აკადემიაში სწავლა?",
+                faqA1: "სწავლის ყოველთვიური საფასური შეადგენს 60 ₾-დან 90 ₾-მდე (ასაკობრივი ჯგუფის მიხედვით: U-8, U-10, U-12, U-14). ფასში შედის კვირაში 3-4-ჯერადი ვარჯიში, ოფიციალურ ტურნირებში მონაწილეობა და პროფესიონალური მეთოდოლოგიით სწავლება.",
+                faqQ2: "რით განსხვავდება აკადემია უბნის საფეხბურთო წრისგან?",
+                faqA2: "აკადემიაში ვარჯიში მიმდინარეობს UEFA-ს ლიცენზირებული მწვრთნელების მიერ, სტანდარტულ მოედნებზე. ჩვენთან ყურადღება ექცევა არა უბრალოდ თამაშს, არამედ ბავშვის ფიზიკურ განვითარებას, დისციპლინას, ტაქტიკურ აზროვნებასა და რეალურ პროფესიულ პერსპექტივას.",
+                faqQ3: "რა ასაკიდან ხდება ბავშვების მიღება?",
+                faqA3: "აკადემიაში ვიღებთ ბავშვებს 6-დან 18 წლამდე. ყველა ასაკობრივ ჯგუფს აქვს თავისი ინდივიდუალური, ასაკზე მორგებული სავარჯიშო პროგრამა.",
+                faqQ4: "რა არის საჭირო პირველი საცდელი ვარჯიშისთვის?",
+                faqA4: "პირველი ვარჯიშისთვის საკმარისია მოსახერხებელი სპორტული ფორმა (შორტი/მაისური), ბოტასები ან ბუცები და წყალი.",
+                faqQ5: "როგორ ხდება ჯგუფების გადანაწილება?",
+                faqA5: "ბავშვები ჯგუფდებიან ასაკისა და მომზადების დონის მიხედვით, რათა თითოეულმა მათგანმა მაქსიმალურად კომფორტულად და ეფექტურად შეძლოს განვითარება.",
                 formBadge: "ონლაინ განაცხადი",
                 formTitle: "ჩაეწერე აკადემიაში",
                 formDesc: "შეავსეთ ფორმა და ჩვენი მენეჯერი დაგიკავშირდებათ ვარჯიშის განრიგისა და დეტალების დასაზუსტებლად.",
@@ -512,10 +961,12 @@
                 clubName: "Rustavi",
                 academyText: "Academy",
                 navAbout: "About Us",
+                navWhyUs: "Why Academy?",
                 navCoaches: "Coaches",
                 navTeams: "Teams",
                 navMatchCenter: "Match Center",
                 navNews: "News",
+                navFaq: "FAQ",
                 navContact: "Contact",
                 btnRegister: "Join Academy",
                 heroBadge: "⚽ Admissions Open for 2026 Season!",
@@ -530,6 +981,30 @@
                 statFields: "Standard Pitches",
                 infraTitle: "Professional Infrastructure",
                 infraDesc: "Natural and artificial pitches in Rustavi",
+                whyUsSubtitle: "The Right Choice",
+                whyUsTitle: "Why Academy over a Local Street Circle?",
+                whyUsDesc: "See the key differences between a regular local section and FC Rustavi Academy",
+                cardLocalHeader: "Regular Local Circle",
+                cardLocalTitle: "Amateur School / Circle",
+                localFeature1Title: "Limited Infrastructure:",
+                localFeature1Desc: "Small, non-standard or damaged neighborhood field.",
+                localFeature2Title: "Amateur Coaches:",
+                localFeature2Desc: "Often unlicensed staff without specialized youth football education.",
+                localFeature3Title: "Just Kicking the Ball:",
+                localFeature3Desc: "Sessions without systematic planning or discipline standards.",
+                localFeature4Title: "No Real Progression:",
+                localFeature4Desc: "No opportunity to transition to official leagues or pro levels.",
+                cardAcademyHeader: "Professional Choice",
+                cardAcademyTitle: "FC Rustavi Academy",
+                academyFeature1Title: "Standard Base:",
+                academyFeature1Desc: "Full-size natural and artificial pitches in Rustavi.",
+                academyFeature2Title: "UEFA License:",
+                academyFeature2Desc: "Certified professional coaches with international degrees.",
+                academyFeature3Title: "European Methodology:",
+                academyFeature3Desc: "Systematic growth, discipline, tactical thinking & teamwork.",
+                academyFeature4Title: "Real Trampoline:",
+                academyFeature4Desc: "Championship participation & chance to join FC Rustavi first team.",
+                cardAcademyFooter: "Future Champions Grow Here!",
                 coachesSubtitle: "Professionalism",
                 coachesTitle: "Coaching Staff",
                 coachesDesc: "Our coaches hold UEFA international licenses and have years of youth football experience.",
@@ -552,6 +1027,31 @@
                 perWeek3: "3 times a week",
                 perWeek4: "4 times a week",
                 perMonth: "month",
+                matchCenterSubtitle: "Results & Schedule",
+                matchesTab: "Upcoming Matches",
+                tableTab: "League Standings",
+                statsTab: "Top Scorers",
+                newsSubtitle: "News",
+                newsTitle: "Academy Life",
+                news1Title: "FC Rustavi Academy New Season Officially Opened!",
+                news1Desc: "The Autumn 2026 season started with a record number of new students. Infrastructure and equipment have been updated.",
+                news2Title: "U-14 Team Won II Place in International Tournament",
+                news2Desc: "Our young football players showed a worthy game and won silver medals at the tournament held in Batumi.",
+                news3Title: "Masterclass from UEFA Instructor",
+                news3Desc: "A special seminar on modern football methodology was held for the academy coaches.",
+                readMore: "Read Full News",
+                faqSubtitle: "Answers & Info",
+                faqTitle: "Frequently Asked Questions",
+                faqQ1: "How much does training cost?",
+                faqA1: "The monthly fee ranges from 60 ₾ to 90 ₾ (depending on age group: U-8, U-10, U-12, U-14). This includes 3-4 sessions per week, official tournament play, and European training methodology.",
+                faqQ2: "How is the academy different from a local neighborhood group?",
+                faqA2: "Training at the academy is conducted by UEFA licensed coaches on standard pitches. We focus on total physical development, discipline, tactical understanding, and real career progression.",
+                faqQ3: "From what age do you accept children?",
+                faqA3: "We accept children from 6 to 18 years old. Each age group follows a tailored curriculum.",
+                faqQ4: "What is needed for the first trial practice?",
+                faqA4: "Comfortable sportswear (shorts/t-shirt), boots or sneakers, and water are all that's required for the first session.",
+                faqQ5: "How are children grouped?",
+                faqA5: "Children are grouped according to their age and skill level to ensure optimal development and comfort.",
                 formBadge: "Online Application",
                 formTitle: "Join the Academy",
                 formDesc: "Fill out the form and our manager will contact you to confirm schedule details.",
@@ -574,10 +1074,12 @@
                 clubName: "Рустави",
                 academyText: "Академия",
                 navAbout: "О нас",
+                navWhyUs: "Почему Академия?",
                 navCoaches: "Тренеры",
                 navTeams: "Команды",
                 navMatchCenter: "Матч-центр",
                 navNews: "Новости",
+                navFaq: "Вопросы",
                 navContact: "Контакты",
                 btnRegister: "Записаться в академию",
                 heroBadge: "⚽ Открыт набор на сезон 2026!",
@@ -592,6 +1094,30 @@
                 statFields: "Полей",
                 infraTitle: "Профессиональная инфраструктура",
                 infraDesc: "Натуральные и искусственные поля в Рустави",
+                whyUsSubtitle: "Правильный выбор",
+                whyUsTitle: "Почему Академия, а не дворовая секция?",
+                whyUsDesc: "Узнайте ключевые различия между обычным кружком и Академией ФК Рустави",
+                cardLocalHeader: "Обычная дворовая секция",
+                cardLocalTitle: "Любительская школа / Секция",
+                localFeature1Title: "Ограниченное поле:",
+                localFeature1Desc: "Маленькое, нестандартное или поврежденное дворовое поле.",
+                localFeature2Title: "Тренеры-любители:",
+                localFeature2Desc: "Часто специалисты без лицензии и опыта детской работы.",
+                localFeature3Title: "Просто «пинание мяча»:",
+                localFeature3Desc: "Занятия без системной программы и дисциплинарного стандарта.",
+                localFeature4Title: "Без перспективы:",
+                localFeature4Desc: "Нет возможности перейти на следующий уровень или в официальные лиги.",
+                cardAcademyHeader: "Профессиональный выбор",
+                cardAcademyTitle: "Академия ФК Рустави",
+                academyFeature1Title: "Стандартная база:",
+                academyFeature1Desc: "Полноразмерные натуральные и искусственные поля в Рустави.",
+                academyFeature2Title: "Лицензия UEFA:",
+                academyFeature2Desc: "Сертифицированные тренеры с международными дипломами.",
+                academyFeature3Title: "Европейская методика:",
+                academyFeature3Desc: "Системное развитие, дисциплина, тактика и командная игра.",
+                academyFeature4Title: "Реальный трамплин:",
+                academyFeature4Desc: "Участие в чемпионате и шанс попасть в первую команду ФК Рустави.",
+                cardAcademyFooter: "Будущие чемпионы растут здесь!",
                 coachesSubtitle: "Профессионализм",
                 coachesTitle: "Тренерский штаб",
                 coachesDesc: "Наши тренеры имеют международные лицензии UEFA и многолетний опыт работы с детьми.",
@@ -614,6 +1140,31 @@
                 perWeek3: "3 раза в неделю",
                 perWeek4: "4 раза в неделю",
                 perMonth: "мес.",
+                matchCenterSubtitle: "Результаты и расписание",
+                matchesTab: "Матчи",
+                tableTab: "Таблица",
+                statsTab: "Бомбардиры",
+                newsSubtitle: "Новости",
+                newsTitle: "Жизнь Академии",
+                news1Title: "Новый сезон Академии ФК Рустави официально открыт!",
+                news1Desc: "Осенний сезон 2026 года стартовал с рекордного количества новых воспитанников. Были обновлены инфраструктура и инвентарь.",
+                news2Title: "Команда U-14 заняла II место на международном турнире",
+                news2Desc: "Наши молодые футболисты показали достойную игру и завоевали серебряные медали на турнире в Батуми.",
+                news3Title: "Мастер-класс от инструктора UEFA",
+                news3Desc: "Для тренеров академии был проведен специальный семинар по современной футбольной методологии.",
+                readMore: "Подробнее",
+                faqSubtitle: "Вопросы и ответы",
+                faqTitle: "Частые Вопросы",
+                faqQ1: "Сколько стоит обучение?",
+                faqA1: "Ежемесячная оплата составляет от 60 ₾ до 90 ₾ (в зависимости от группы: U-8, U-10, U-12, U-14). В стоимость входят 3-4 тренировки в неделю, участие в официальных турнирах и обучение по европейской методике.",
+                faqQ2: "Чем академия отличается от обычной секции?",
+                faqA2: "Тренировки проводятся лицензированными тренерами UEFA на стандартных полях. Мы фокусируемся на физическом развитии, дисциплине, тактике и реальной карьере.",
+                faqQ3: "С какого возраста принимают детей?",
+                faqA3: "Мы принимаем детей от 6 до 18 лет. Каждая возрастная группа занимается по адаптированной программе.",
+                faqQ4: "Что нужно для первой пробной тренировки?",
+                faqA4: "Достаточно иметь удобную спортивную форму (шорты/футболку), кроссовки или бутсы и воду.",
+                faqQ5: "Как происходит распределение по группам?",
+                faqA5: "Дети распределяются по возрасту и уровню подготовки для максимального комфорта и прогресса.",
                 formBadge: "Онлайн заявка",
                 formTitle: "Записаться в академию",
                 formDesc: "Заполните форму, и наш менеджер свяжется с вами для уточнения деталей.",
@@ -636,10 +1187,12 @@
                 clubName: "Rustavi",
                 academyText: "Academia",
                 navAbout: "Nosotros",
+                navWhyUs: "¿Por qué la Academia?",
                 navCoaches: "Entrenadores",
                 navTeams: "Equipos",
                 navMatchCenter: "Centro de Partidos",
                 navNews: "Noticias",
+                navFaq: "Preguntas",
                 navContact: "Contacto",
                 btnRegister: "Únete a la Academia",
                 heroBadge: "⚽ ¡Inscripciones abiertas para 2026!",
@@ -654,6 +1207,30 @@
                 statFields: "Campos de Fútbol",
                 infraTitle: "Infraestructura Profesional",
                 infraDesc: "Campos naturales y artificiales en Rustavi",
+                whyUsSubtitle: "La Elección Correcta",
+                whyUsTitle: "¿Por qué elegir la Academia sobre un grupo local?",
+                whyUsDesc: "Conoce las diferencias clave entre una escuela amateur y la Academia FC Rustavi",
+                cardLocalHeader: "Grupo Local Amateur",
+                cardLocalTitle: "Escuela Local / Círculo",
+                localFeature1Title: "Campo Limitado:",
+                localFeature1Desc: "Campo de barrio pequeño, no estándar o dañado.",
+                localFeature2Title: "Entrenadores Amateur:",
+                localFeature2Desc: "Personal a menudo sin licencia ni educación especializada.",
+                localFeature3Title: "Solo patear el balón:",
+                localFeature3Desc: "Sesiones sin planificación ni disciplina estándar.",
+                localFeature4Title: "Sin Proyección Real:",
+                localFeature4Desc: "Sin oportunidad de pasar a ligas oficiales o nivel profesional.",
+                cardAcademyHeader: "Elección Profesional",
+                cardAcademyTitle: "Academia FC Rustavi",
+                academyFeature1Title: "Base Estándar:",
+                academyFeature1Desc: "Campos naturales y artificiales reglamentarios en Rustavi.",
+                academyFeature2Title: "Licencia UEFA:",
+                academyFeature2Desc: "Entrenadores profesionales certificados internacionalmente.",
+                academyFeature3Title: "Metodología Europea:",
+                academyFeature3Desc: "Desarrollo sistemático, disciplina y pensamiento táctico.",
+                academyFeature4Title: "Trampolín Real:",
+                academyFeature4Desc: "Participación en torneos y posibilidad de llegar al primer equipo.",
+                cardAcademyFooter: "¡Los futuros campeones crecen aquí!",
                 coachesSubtitle: "Profesionalismo",
                 coachesTitle: "Cuerpo Técnico",
                 coachesDesc: "Nuestros entrenadores cuentan con licencias internacionales UEFA.",
@@ -676,6 +1253,31 @@
                 perWeek3: "3 veces por semana",
                 perWeek4: "4 veces por semana",
                 perMonth: "mes",
+                matchCenterSubtitle: "Resultados y Horarios",
+                matchesTab: "Partidos",
+                tableTab: "Clasificación",
+                statsTab: "Goleadores",
+                newsSubtitle: "Noticias",
+                newsTitle: "Vida en la Academia",
+                news1Title: "¡Inauguración oficial de la nueva temporada de la Academia del FC Rustavi!",
+                news1Desc: "La temporada de otoño de 2026 comenzó con un número récord de nuevos alumnos. Se ha renovado la infraestructura y el material.",
+                news2Title: "El equipo U-14 obtuvo el II puesto en el torneo internacional",
+                news2Desc: "Nuestros jóvenes futbolistas demostraron un gran juego y ganaron las medallas de plata en el torneo celebrado en Batumi.",
+                news3Title: "Clase magistral de un instructor de la UEFA",
+                news3Desc: "Se celebró un seminario especial sobre la metodología del fútbol moderno para los entrenadores de la academia.",
+                readMore: "Leer más",
+                faqSubtitle: "Respuestas e Info",
+                faqTitle: "Preguntas Frecuentes",
+                faqQ1: "¿Cuánto cuesta la formación?",
+                faqA1: "La cuota mensual oscila entre 60 ₾ y 90 ₾ (según el grupo: U-8, U-10, U-12, U-14). Incluye de 3 a 4 sesiones semanales, torneos oficiales y metodología europea.",
+                faqQ2: "¿En qué se diferencia la academia de un grupo de barrio?",
+                faqA2: "El entrenamiento lo imparten entrenadores con licencia UEFA en campos reglamentarios. Nos enfocamos en desarrollo físico, disciplina, táctica y proyección.",
+                faqQ3: "¿A partir de qué edad se aceptan niños?",
+                faqA3: "Aceptamos niños de 6 a 18 años. Cada grupo sigue un programa adaptado a su edad.",
+                faqQ4: "¿Qué se necesita para el primer entrenamiento de prueba?",
+                faqA4: "Ropa deportiva cómoda (pantalón corto/camiseta), botas o zapatillas y agua.",
+                faqQ5: "¿Cómo se distribuyen los grupos?",
+                faqA5: "Los niños se agrupan según su edad y nivel de habilidad para garantizar un progreso óptimo.",
                 formBadge: "Solicitud en Línea",
                 formTitle: "Únete a la Academia",
                 formDesc: "Completa el formulario y nos pondremos en contacto contigo.",
@@ -709,7 +1311,43 @@
             });
         }
 
-        // Initialize Intro & Language on Page Load
+        // Accordion FAQ toggle
+        function toggleFaq(id) {
+            const ans = document.getElementById(`faq-ans-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            if (ans.classList.contains('hidden')) {
+                ans.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                ans.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Tab switcher for Match Center
+        function switchTab(tabName) {
+            document.getElementById('tab-matches').classList.add('hidden');
+            document.getElementById('tab-table').classList.add('hidden');
+            document.getElementById('tab-stats').classList.add('hidden');
+
+            document.getElementById('tab-btn-matches').className = "px-4 py-2 rounded-lg text-slate-700 hover:text-slate-900 transition";
+            document.getElementById('tab-btn-table').className = "px-4 py-2 rounded-lg text-slate-700 hover:text-slate-900 transition";
+            document.getElementById('tab-btn-stats').className = "px-4 py-2 rounded-lg text-slate-700 hover:text-slate-900 transition";
+
+            if(tabName === 'matches') {
+                document.getElementById('tab-matches').classList.remove('hidden');
+                document.getElementById('tab-btn-matches').className = "px-4 py-2 rounded-lg bg-rustaviRed text-white font-bold transition shadow-sm";
+            } else if(tabName === 'table') {
+                document.getElementById('tab-table').classList.remove('hidden');
+                document.getElementById('tab-btn-table').className = "px-4 py-2 rounded-lg bg-rustaviRed text-white font-bold transition shadow-sm";
+            } else if(tabName === 'stats') {
+                document.getElementById('tab-stats').classList.remove('hidden');
+                document.getElementById('tab-btn-stats').className = "px-4 py-2 rounded-lg bg-rustaviRed text-white font-bold transition shadow-sm";
+            }
+        }
+
+        // Initialize Page
         window.addEventListener('DOMContentLoaded', () => {
             const savedLang = localStorage.getItem('rustavi_lang') || 'ka';
             changeLanguage(savedLang);
@@ -730,7 +1368,6 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Form Submission Logic
         function handleRegistration(e) {
             e.preventDefault();
             alert('მადლობა! თქვენი განაცხადი წარმატებით გაიგზავნა. / Thank you! Application submitted.');
